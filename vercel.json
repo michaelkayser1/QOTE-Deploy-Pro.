@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "cd qote-app && npm run build",
+  "devCommand": "cd qote-app && npm run dev",
+  "installCommand": "cd qote-app && npm install",
+  "outputDirectory": "qote-app/.next"
+}
