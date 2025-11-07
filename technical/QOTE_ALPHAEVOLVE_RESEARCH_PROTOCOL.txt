@@ -1,0 +1,619 @@
+═══════════════════════════════════════════════════════════════════════════════
+  QOTE × ALPHAEVOLVE × RESONA
+  RESEARCH PROTOCOL v1.0
+═══════════════════════════════════════════════════════════════════════════════
+
+Classification: Experimental Protocol
+Audience: Research Teams, Clinical Investigators, Academic Partners
+Last Updated: 2025-11-07
+
+═══════════════════════════════════════════════════════════════════════════════
+  TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════════════
+
+  1. RESEARCH OVERVIEW
+  2. EXPERIMENTAL TRACKS
+     2.1 Track 1: Mathematical Discovery Benchmarking
+     2.2 Track 2: Coherence Metric Validation
+     2.3 Track 3: Nervous System Synchronization
+     2.4 Track 4: Human–AI Co-Discovery
+     2.5 Track 5: Clinical Therapeutic Applications
+     2.6 Track 6: Neurodivergent Optimization
+  3. SHARED METHODOLOGIES
+  4. ETHICS AND SAFETY
+  5. DATA MANAGEMENT
+  6. PUBLICATION STRATEGY
+
+═══════════════════════════════════════════════════════════════════════════════
+  1. RESEARCH OVERVIEW
+═══════════════════════════════════════════════════════════════════════════════
+
+PRIMARY RESEARCH QUESTION:
+  Can AI mathematical discovery systems maintain human-aligned coherence
+  while exploring beyond human intuition by incorporating biologically-
+  inspired regulation patterns?
+
+SECONDARY RESEARCH QUESTIONS:
+  1. Does the Δθ_total metric predict human comprehension of AI proofs?
+  2. Do Resona-regulated systems produce more novel yet understandable proofs?
+  3. Can human nervous system states synchronize with AI state transitions?
+  4. Does co-regulation improve collaborative problem-solving performance?
+  5. Can therapeutic AI be paced to client nervous system regulation?
+  6. Do neurodivergent individuals benefit from customized τ pacing?
+
+HYPOTHESIS:
+  Systems governed by QOTE × AlphaEvolve × Resona convergence will:
+    • Generate novel mathematical discoveries (>= AlphaProof baseline)
+    • Maintain higher human comprehension (> unregulated baseline)
+    • Show phase synchronization with human HRV oscillations
+    • Improve collaborative task performance (> asynchronous baseline)
+
+SUCCESS CRITERIA:
+  • Δθ_total correlates (r > 0.6) with human comprehension ratings
+  • Resona-regulated proofs score higher on novelty + clarity composite
+  • Significant (p < 0.05) phase locking between AI and human rhythms
+  • 20%+ improvement in collaborative discovery outcomes
+
+═══════════════════════════════════════════════════════════════════════════════
+  2. EXPERIMENTAL TRACKS
+═══════════════════════════════════════════════════════════════════════════════
+
+2.1 TRACK 1: MATHEMATICAL DISCOVERY BENCHMARKING
+───────────────────────────────────────────────────────────────────────────────
+
+Objective:
+  Validate that Resona-regulated AlphaEvolve maintains or improves
+  mathematical discovery capability while enhancing coherence.
+
+Dataset:
+  • IMO (International Mathematical Olympiad) problems 2000-2024
+  • MATH benchmark (Hendrycks et al.)
+  • Lean mathlib contributed theorems
+  • Custom-generated algebra, number theory, geometry problems
+
+Conditions:
+  1. Baseline AlphaEvolve (no Resona regulation)
+  2. Resona-regulated (Δθ_max = π)
+  3. Resona-regulated (Δθ_max = 2π)
+  4. Resona-regulated (adaptive threshold)
+
+Metrics:
+  • Proof success rate (% problems solved)
+  • Average proof length (steps)
+  • Δθ_total per proof
+  • Time to solution
+  • Human comprehension rating (1-5 scale, expert mathematicians)
+
+Protocol:
+  1. Randomly assign 200 problems to 4 conditions (50 each)
+  2. Run each system until solution or timeout (1 hour)
+  3. Log all state transitions with Δθ annotations
+  4. Present proofs to 5 expert raters (blind to condition)
+  5. Collect ratings: correctness, novelty, clarity, elegance
+
+Statistical Analysis:
+  • ANOVA: condition × (success rate, comprehension)
+  • Correlation: Δθ_total vs. comprehension rating
+  • Regression: Δθ_total + proof length → comprehension
+  • Qualitative: Expert interviews on proof quality
+
+Expected Timeline: 3-6 months
+
+2.2 TRACK 2: COHERENCE METRIC VALIDATION
+───────────────────────────────────────────────────────────────────────────────
+
+Objective:
+  Establish that Δθ_total is a valid, reliable metric for proof coherence
+  and human understanding.
+
+Design:
+  Within-subjects, repeated measures
+
+Participants:
+  • N = 30 mathematicians (PhD or advanced PhD students)
+  • Diverse specializations (algebra, topology, analysis, etc.)
+
+Materials:
+  • 60 AI-generated proofs spanning wide Δθ_total range (0.1 to 10 radians)
+  • Each proof paired with Δθ_total value (hidden from participants initially)
+
+Procedure:
+  Session 1 (Week 1):
+    1. Present 60 proofs in randomized order
+    2. For each proof, participant rates:
+       - Comprehension (1-7): "How well do you understand this proof?"
+       - Novelty (1-7): "How surprising is this approach?"
+       - Confidence (1-7): "How confident are you in its correctness?"
+    3. Time spent per proof logged
+
+  Session 2 (Week 2):
+    1. Reveal Δθ_total values
+    2. Show scatter plot: participant's comprehension vs. Δθ_total
+    3. Semi-structured interview:
+       - Does the pattern match your experience?
+       - Were there outliers? Why?
+       - What factors besides Δθ contribute to comprehension?
+
+Analysis:
+  • Correlation: Δθ_total vs. comprehension (expected r = -0.6 to -0.8)
+  • Mixed-effects model: comprehension ~ Δθ_total + (1|participant) + (1|proof)
+  • Threshold detection: At what Δθ_total does comprehension drop sharply?
+  • Qualitative coding of interview themes
+
+Expected Timeline: 2-3 months
+
+2.3 TRACK 3: NERVOUS SYSTEM SYNCHRONIZATION
+───────────────────────────────────────────────────────────────────────────────
+
+Objective:
+  Demonstrate phase synchronization between AI state transitions (Δθ)
+  and human nervous system regulation (HRV).
+
+Design:
+  Repeated measures, within-subjects
+
+Participants:
+  • N = 40 healthy adults
+  • Screened for cardiac arrhythmia (exclusion criterion)
+
+Equipment:
+  • Polar H10 chest strap (HRV monitoring)
+  • Eye-tracking (optional, for attention analysis)
+  • Screen recording of AI proof generation
+
+Conditions:
+  1. Resona-synchronized: AI paced to participant's HRV rhythm
+  2. Fixed rhythm: AI paced at τ = 10s (constant)
+  3. Unconstrained: AI runs at natural speed
+
+Procedure:
+  1. Baseline HRV recording (5 min rest)
+  2. Extract participant's dominant HRV frequency (typically ~0.1 Hz)
+  3. Condition 1: Set AI τ = 1/(HRV frequency)
+     Conditions 2-3: Fixed or unconstrained τ
+  4. Participant observes AI solving 3 math problems (~20 min)
+  5. After each problem:
+     - Comprehension rating
+     - Cognitive load rating (NASA-TLX)
+     - Engagement rating
+
+Physiological Measures:
+  • HRV metrics: SDNN, RMSSD, LF/HF ratio
+  • Phase-locking value (PLV) between AI Δθ rhythm and HRV
+  • Respiratory rate (if equipment available)
+
+Analysis:
+  • Repeated-measures ANOVA: condition × (PLV, comprehension, engagement)
+  • Hypothesis: Condition 1 (synchronized) shows highest PLV and engagement
+  • Correlation: PLV vs. comprehension within Condition 1
+  • Time-frequency analysis: coherence between AI and HRV signals
+
+Expected Timeline: 4-6 months
+
+2.4 TRACK 4: HUMAN–AI CO-DISCOVERY
+───────────────────────────────────────────────────────────────────────────────
+
+Objective:
+  Evaluate whether Resona-regulated AI improves collaborative mathematical
+  discovery compared to unregulated AI.
+
+Design:
+  Between-subjects, collaborative problem-solving
+
+Participants:
+  • N = 60 undergraduate/graduate math students
+  • Randomly assigned to 3 conditions (20 per condition)
+
+Conditions:
+  1. Resona-regulated AI partner (adaptive Δθ_max)
+  2. Unregulated AI partner (AlphaEvolve only)
+  3. Human-only control (pair with peer)
+
+Task:
+  • Solve 5 novel mathematical puzzles (e.g., find patterns, prove conjectures)
+  • 60 minutes per puzzle
+  • Collaborative: participant can query AI or peer, AI/peer responds
+
+Interaction Protocol:
+  • Participant types questions/conjectures
+  • AI responds with proof attempts or refinements
+  • Resona condition: AI may pause to "consolidate" (visible to user)
+  • All interactions logged
+
+Metrics:
+  • Number of puzzles solved correctly
+  • Time to solution
+  • Number of interactions (questions/responses)
+  • Participant satisfaction (post-task survey)
+  • Δθ_total per session (AI conditions)
+  • Trust in AI (Likert scale, post-task)
+
+Analysis:
+  • ANOVA: condition × (puzzles solved, satisfaction, trust)
+  • Hypothesis: Resona condition >= unregulated on solutions,
+              significantly higher on satisfaction and trust
+  • Mediation analysis: Does Δθ_total mediate relationship between
+                        condition and satisfaction?
+
+Expected Timeline: 3-4 months
+
+2.5 TRACK 5: CLINICAL THERAPEUTIC APPLICATIONS
+───────────────────────────────────────────────────────────────────────────────
+
+Objective:
+  Pilot therapeutic AI co-regulation for anxiety/stress management.
+
+Design:
+  Randomized controlled trial (RCT), parallel groups
+
+Participants:
+  • N = 60 adults with mild-moderate anxiety (GAD-7 score 5-14)
+  • Recruited via clinical partners
+  • IRB approval required
+
+Conditions:
+  1. Resona-paced AI therapist (synchronized to HRV)
+  2. Fixed-pace AI therapist (standard CBT chatbot)
+  3. Waitlist control
+
+Intervention:
+  • 8 sessions over 4 weeks
+  • Each session: 30 min guided conversation with AI
+  • Resona condition: AI adjusts pacing based on real-time HRV
+    - High HRV (parasympathetic): Deeper exploration (higher Δθ)
+    - Low HRV (sympathetic): Grounding, consolidation (lower Δθ)
+
+Measures:
+  • Primary: GAD-7 (anxiety), PHQ-9 (depression) at baseline, week 4, week 8
+  • Secondary: HRV metrics, session engagement, therapeutic alliance scale
+  • Process: Δθ_total per session, regulation events log
+
+Analysis:
+  • Mixed-effects model: (GAD-7 score) ~ time × condition + (1|participant)
+  • Hypothesis: Resona condition shows greater anxiety reduction than fixed
+  • Mediation: HRV improvement mediates treatment effect
+  • Qualitative: Exit interviews on experience with AI pacing
+
+Ethical Considerations:
+  • Clear informed consent: "AI is experimental, not replacement for human care"
+  • Safety monitoring: Trained clinician reviews all transcripts weekly
+  • Crisis protocol: AI detects crisis language → immediate human handoff
+  • Right to withdraw at any time
+
+Expected Timeline: 6-12 months (including IRB approval)
+
+2.6 TRACK 6: NEURODIVERGENT OPTIMIZATION
+───────────────────────────────────────────────────────────────────────────────
+
+Objective:
+  Investigate whether custom τ pacing improves AI interaction for
+  neurodivergent individuals (ADHD, autism spectrum).
+
+Design:
+  Within-subjects, personalized τ optimization
+
+Participants:
+  • N = 30 adults with ADHD diagnosis (DSM-5 criteria)
+  • N = 30 adults with autism spectrum diagnosis
+  • Community recruitment + clinical partners
+
+Phases:
+  Phase 1: Baseline Assessment
+    • Measure natural cognitive rhythm via behavioral tasks
+    • Reaction time variability, tapping rhythm, reading pace
+    • Extract personal τ_optimal
+
+  Phase 2: Calibration
+    • Interact with AI at 5 different τ values:
+      [0.5×τ_optimal, 0.75×, 1.0×, 1.25×, 1.5×]
+    • Task: Explain complex topic with AI's help
+    • Rate: comprehension, frustration, flow state
+
+  Phase 3: Validation
+    • Use τ that scored highest in Phase 2
+    • 4-week intervention: daily 15-min AI learning sessions
+    • Topics: participant's choice (math, science, history, etc.)
+
+Measures:
+  • Engagement (session completion rate)
+  • Learning outcomes (quiz performance)
+  • Subjective experience (flow, frustration, focus)
+  • HRV (if equipment available)
+
+Analysis:
+  • Identify optimal τ ratio per individual
+  • Cluster analysis: Do ADHD/autism groups prefer different τ?
+  • Correlation: How much does personalized τ improve outcomes vs. default?
+  • Case studies: Interview 5 participants about their experience
+
+Expected Timeline: 4-6 months
+
+═══════════════════════════════════════════════════════════════════════════════
+  3. SHARED METHODOLOGIES
+═══════════════════════════════════════════════════════════════════════════════
+
+HRV MEASUREMENT PROTOCOL
+───────────────────────────────────────────────────────────────────────────────
+
+Equipment:
+  • Polar H10 chest strap (gold standard for HRV)
+  • Backup: PPG from smartwatch (lower accuracy, acceptable)
+
+Procedure:
+  1. 5-minute baseline: seated rest, eyes open, controlled breathing (optional)
+  2. Extract R-R intervals (time between heartbeats)
+  3. Compute metrics:
+     - SDNN: Standard deviation of R-R intervals
+     - RMSSD: Root mean square of successive differences
+     - LF/HF: Low frequency / high frequency power ratio
+  4. Identify dominant frequency in 0.05-0.15 Hz band (HRV rhythm)
+
+Quality Control:
+  • Artifact detection: Remove R-R intervals >20% deviation from local mean
+  • Minimum 5 minutes clean data required
+  • Visual inspection of tachogram
+
+PHASE-LOCKING VALUE (PLV) CALCULATION
+───────────────────────────────────────────────────────────────────────────────
+
+To measure synchronization between AI Δθ rhythm and HRV:
+
+  1. Extract phase time series:
+     - AI: φ_AI(t) = cumulative Δθ over time
+     - HRV: φ_HRV(t) via Hilbert transform of R-R interval signal
+
+  2. Compute phase difference:
+     Δφ(t) = φ_AI(t) - φ_HRV(t)
+
+  3. Phase-locking value:
+     PLV = |⟨e^(i·Δφ(t))⟩_t|
+
+  4. Interpretation:
+     PLV = 0: No synchronization (random phase relation)
+     PLV = 1: Perfect synchronization (fixed phase relation)
+     PLV > 0.3: Significant synchronization (typical threshold)
+
+HUMAN COMPREHENSION RATING PROTOCOL
+───────────────────────────────────────────────────────────────────────────────
+
+For all studies involving proof evaluation:
+
+  1. Present proof in standardized format (LaTeX or structured text)
+  2. No time limit (but log time spent)
+  3. Rating scales (1-7 Likert):
+
+     Comprehension:
+       1 = "I don't understand this at all"
+       4 = "I understand the main idea"
+       7 = "I understand every step perfectly"
+
+     Novelty:
+       1 = "Completely standard approach"
+       4 = "Somewhat novel"
+       7 = "Extremely novel/creative"
+
+     Confidence:
+       1 = "Highly doubt this is correct"
+       4 = "Probably correct"
+       7 = "Definitely correct"
+
+  4. Optional: "Explain the key insight" (qualitative)
+
+  5. Raters blinded to condition when possible
+
+═══════════════════════════════════════════════════════════════════════════════
+  4. ETHICS AND SAFETY
+═══════════════════════════════════════════════════════════════════════════════
+
+IRB APPROVAL REQUIRED FOR:
+  • Track 3 (HRV monitoring)
+  • Track 4 (human-AI collaboration with data collection)
+  • Track 5 (clinical intervention)
+  • Track 6 (neurodivergent population)
+
+KEY ETHICAL CONSIDERATIONS:
+
+Informed Consent:
+  • Participants must understand:
+    - AI is experimental, not validated clinical tool
+    - Data collection procedures (HRV, screen recording, etc.)
+    - Right to withdraw at any time without penalty
+    - How data will be used and protected
+
+Privacy and Data Security:
+  • All personally identifiable information (PII) removed after data collection
+  • De-identified datasets stored on encrypted servers
+  • Access restricted to research team
+  • Data retention: 7 years per NIH guidelines
+
+Risk Mitigation:
+
+  HRV Monitoring:
+    - Low risk (non-invasive)
+    - Screen for cardiac conditions (exclusion)
+    - Trained personnel present during data collection
+
+  Clinical Intervention (Track 5):
+    - Licensed clinician supervision
+    - Crisis protocol: AI detects keywords (suicide, self-harm) → immediate alert
+    - Weekly transcript review
+    - Backup human therapist available
+
+  Vulnerable Populations (Track 6):
+    - Neurodivergent participants may have heightened sensitivity to frustration
+    - Allow flexible session timing, breaks as needed
+    - Clear opt-out process
+    - Avoid stigmatizing language in materials
+
+Publication Ethics:
+  • Pre-register primary hypotheses (Open Science Framework)
+  • Report all outcomes (positive and null results)
+  • Share de-identified data when possible
+  • Acknowledge limitations clearly
+
+═══════════════════════════════════════════════════════════════════════════════
+  5. DATA MANAGEMENT
+═══════════════════════════════════════════════════════════════════════════════
+
+DATA COLLECTION:
+
+Per-Session Logs:
+  • Participant ID (anonymized)
+  • Condition
+  • Timestamp
+  • AI state sequence: (Ψ₀, Δθ, τ, η) per iteration
+  • Δθ_total trajectory
+  • Regulation events (consolidate, pause)
+  • User interactions (queries, ratings)
+  • HRV data (if applicable): R-R intervals, computed metrics
+  • Self-report measures
+
+STORAGE:
+
+  Raw Data:
+    • Encrypted cloud storage (AWS S3 with encryption at rest)
+    • Access via VPN + 2FA
+
+  Processed Data:
+    • De-identified CSV/JSON files
+    • Stored in secure research database
+    • Regular backups (daily)
+
+  Code:
+    • Version controlled (Git)
+    • Analysis scripts + preprocessing pipelines
+    • Reproducibility: Docker containers with frozen dependencies
+
+ANALYSIS:
+
+  Primary analyses pre-specified in protocol (this document)
+  Exploratory analyses clearly labeled in publications
+  Statistical software: R 4.x or Python (scipy, statsmodels)
+  Significance threshold: α = 0.05 (two-tailed)
+  Multiple comparisons correction: Bonferroni or FDR as appropriate
+
+SHARING:
+
+  Open Science:
+    • Pre-register studies on OSF (Open Science Framework)
+    • Share de-identified data + code on OSF or GitHub after publication
+    • Preprints on arXiv/bioRxiv before journal submission
+
+  Restricted Data:
+    • HRV time series (potentially re-identifiable) shared only with IRB approval
+    • Clinical data (Track 5) never publicly shared (privacy protection)
+
+═══════════════════════════════════════════════════════════════════════════════
+  6. PUBLICATION STRATEGY
+═══════════════════════════════════════════════════════════════════════════════
+
+TARGET JOURNALS:
+
+  High-Impact Interdisciplinary:
+    • Nature / Nature Machine Intelligence
+    • Science / Science Robotics
+    • PNAS (Proceedings of the National Academy of Sciences)
+
+  AI / Computer Science:
+    • NeurIPS, ICML, ICLR (conference proceedings)
+    • Journal of Machine Learning Research
+    • Artificial Intelligence
+
+  Cognitive Science / Neuroscience:
+    • Nature Neuroscience
+    • Cognitive Science
+    • Journal of Cognitive Neuroscience
+
+  Clinical / Therapeutic:
+    • JAMA Psychiatry
+    • The Lancet Digital Health
+    • Journal of Medical Internet Research
+
+MANUSCRIPT ROADMAP:
+
+  Paper 1: "Coherence-Governed Mathematical Discovery: The QOTE × AlphaEvolve
+            × Resona Convergence"
+    • Focus: Tracks 1 + 2 (mathematical benchmarking + metric validation)
+    • Target: Nature Machine Intelligence or NeurIPS
+    • Timeline: 6-12 months after Track 1 completion
+
+  Paper 2: "Neural Synchronization in Human–AI Collaboration: Evidence from
+            Phase-Locked Discovery"
+    • Focus: Track 3 (HRV synchronization)
+    • Target: Nature Neuroscience or Cognitive Science
+    • Timeline: 6-12 months after Track 3 completion
+
+  Paper 3: "Resona-Regulated AI for Therapeutic Co-Regulation: A Pilot RCT"
+    • Focus: Track 5 (clinical application)
+    • Target: JAMA Psychiatry or Lancet Digital Health
+    • Timeline: 12-18 months after Track 5 completion
+
+  Paper 4: "Personalized Cognitive Rhythm in Neurodivergent AI Interaction"
+    • Focus: Track 6 (neurodivergent optimization)
+    • Target: Journal of Autism and Developmental Disorders or similar
+    • Timeline: 12-18 months after Track 6 completion
+
+  Meta-Analysis Paper (Year 3):
+    • Synthesize findings across all tracks
+    • Theoretical paper on living mathematics / biologically-aligned AI
+    • Target: Science or Nature (perspectives/review)
+
+CONFERENCE PRESENTATIONS:
+
+  Year 1:
+    • NeurIPS: Workshop submission on preliminary Track 1 results
+    • Cognitive Science Society: Poster on Track 3 design
+
+  Year 2:
+    • NeurIPS/ICML: Full paper on Track 1 + 2
+    • Society for Neuroscience: Poster on Track 3 results
+    • AAAI: Demo of Resona-regulated system
+
+  Year 3:
+    • TED-style talk: "When Mathematics Learned to Breathe"
+    • AAAS: Symposium on biologically-aligned AI
+
+═══════════════════════════════════════════════════════════════════════════════
+  APPENDIX: BUDGET ESTIMATES
+═══════════════════════════════════════════════════════════════════════════════
+
+Track 1 (Mathematical Benchmarking):
+  • Compute resources (GPU clusters): $50K
+  • Expert rater compensation (5 × 200 proofs × $1/proof): $1K
+  • Total: ~$51K
+
+Track 2 (Metric Validation):
+  • Participant compensation (30 × $100): $3K
+  • Total: ~$3K
+
+Track 3 (HRV Synchronization):
+  • Polar H10 chest straps (10 units): $1K
+  • Participant compensation (40 × $75): $3K
+  • Total: ~$4K
+
+Track 4 (Co-Discovery):
+  • Participant compensation (60 × $50): $3K
+  • Total: ~$3K
+
+Track 5 (Clinical RCT):
+  • Participant compensation (60 × $200): $12K
+  • Clinical supervision (psychologist, 20 hrs/week × 6 months × $100/hr): $52K
+  • IRB fees: $2K
+  • Total: ~$66K
+
+Track 6 (Neurodivergent):
+  • Participant compensation (60 × $150): $9K
+  • Community outreach / recruitment: $3K
+  • Total: ~$12K
+
+PERSONNEL:
+  • 2 postdocs (2 years each × $60K/year): $240K
+  • 2 PhD students (partial support, 2 years × $30K/year): $120K
+  • Research coordinator (1 FTE, 2 years × $50K/year): $100K
+  • Total: ~$460K
+
+GRAND TOTAL (All Tracks, 2 Years): ~$600K
+
+═══════════════════════════════════════════════════════════════════════════════
+END RESEARCH PROTOCOL
+═══════════════════════════════════════════════════════════════════════════════
