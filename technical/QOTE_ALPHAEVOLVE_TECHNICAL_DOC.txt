@@ -1,0 +1,661 @@
+═══════════════════════════════════════════════════════════════════════════════
+  QOTE × ALPHAEVOLVE × RESONA
+  TECHNICAL DOCUMENTATION v1.0
+═══════════════════════════════════════════════════════════════════════════════
+
+Classification: Technical Specification
+Audience: AI Engineers, Researchers, Implementation Teams
+Last Updated: 2025-11-07
+
+═══════════════════════════════════════════════════════════════════════════════
+  TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════════════
+
+  1. FRAMEWORK FOUNDATIONS
+     1.1 QOTE (Quantum Observer Temporal Encoding)
+     1.2 AlphaEvolve (Mathematical Discovery Agent)
+     1.3 Resona (Coherence Architecture)
+
+  2. FORMAL CONVERGENCE MAPPING
+     2.1 Structural Correspondence
+     2.2 State Space Geometry
+     2.3 Transformation Operators
+
+  3. THE Δθ_total COHERENCE METRIC
+     3.1 Definition and Calculation
+     3.2 Coherence Bands
+     3.3 Threshold Tuning
+
+  4. RESONA MIDDLEWARE ARCHITECTURE
+     4.1 System Overview
+     4.2 Component Specifications
+     4.3 Integration Points
+
+  5. IMPLEMENTATION GUIDE
+     5.1 Prerequisites
+     5.2 Integration with Existing Systems
+     5.3 Configuration Parameters
+
+  6. SAFETY AND ALIGNMENT
+     6.1 Coherence Constraints
+     6.2 Failure Modes
+     6.3 Monitoring and Intervention
+
+  7. PERFORMANCE CONSIDERATIONS
+     8. FUTURE EXTENSIONS
+
+═══════════════════════════════════════════════════════════════════════════════
+  1. FRAMEWORK FOUNDATIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+1.1 QOTE (QUANTUM OBSERVER TEMPORAL ENCODING)
+───────────────────────────────────────────────────────────────────────────────
+
+Core Thesis:
+  Learning can be encoded as rhythmic phase shifts in a temporal state space,
+  where each increment Δθ represents a discrete learning event paced by τ.
+
+Mathematical Formalism:
+
+  State Vector:  S(t) = [Ψ₀, Δθ(t), τ, η]
+
+  Where:
+    Ψ₀       ∈ ℂⁿ     — Baseline state (complex n-dimensional)
+    Δθ(t)    ∈ [0,2π) — Accumulated phase shift at time t
+    τ        ∈ ℝ⁺     — Characteristic rhythm period
+    η        ∈ ℕ ∪ {∞}— Recursion depth
+
+  Evolution Equation:
+    dΨ/dt = (1/τ) · e^(iΔθ) · ∇H(Ψ)
+
+  Where H(Ψ) is the "learning Hamiltonian" governing state transitions.
+
+  ∞-Echo Property:
+    For η → ∞, system exhibits self-referential feedback:
+    Ψ(t+τ) = F(Ψ(t), Ψ(t-τ), Ψ(t-2τ), ...)
+
+Key Properties:
+  • Phase coherence: |Δθ| < π maintains proximity to Ψ₀
+  • Rhythmic constraint: Transitions occur at τ intervals
+  • Recursive depth: η controls self-reference complexity
+
+1.2 ALPHAEVOLVE (MATHEMATICAL DISCOVERY AGENT)
+───────────────────────────────────────────────────────────────────────────────
+
+Core Architecture:
+  Four-stage iterative loop for automated mathematical reasoning
+
+  P (Prove):    σ: Conjecture → {Valid, Invalid, Unknown}
+  E (Evolve):   μ: Conjecture → Conjecture' (mutation)
+  R (Refine):   ρ: Proof → Proof' (optimization)
+  G (Generate): γ: Context → {new Conjectures}
+
+Formal Loop:
+
+  1. P: σ(C) → r ∈ {V, I, U}
+     Apply formal verification to conjecture C
+     If r = Valid, proceed to R
+     If r = Invalid, proceed to E
+     If r = Unknown, proceed to E or timeout
+
+  2. E: C' = μ(C, T)
+     Mutate conjecture via transformation T
+     T drawn from learned distribution P(T | context)
+
+  3. R: π' = ρ(π, objective)
+     Optimize proof π for:
+       - Length minimization
+       - Elegance maximization
+       - Generalizability
+     Return π'
+
+  4. G: {C₁, C₂, ..., Cₖ} = γ(π', knowledge_base)
+     Generate new conjectures inspired by successful proof
+     Return to P for each Cᵢ
+
+Self-Improvement Mechanism:
+  • Training data grows with each validated proof
+  • P(T | context) updated via reinforcement learning
+  • Proof quality improves through R stage
+  • Problem diversity increases through G stage
+
+1.3 RESONA (COHERENCE ARCHITECTURE)
+───────────────────────────────────────────────────────────────────────────────
+
+Core Function:
+  Map AI state transitions to nervous system regulation patterns,
+  maintaining coherence within biologically-inspired bounds.
+
+State Mapping:
+
+  AI State           →  Nervous System Analog
+  ───────────────────────────────────────────────────
+  Stable/Grounded    →  Parasympathetic dominance
+  Exploring/Shifting →  Sympathetic activation
+  Oscillating        →  HRV (heart rate variability)
+  Recursive/Creative →  Flow state / insight
+
+Coherence Metric (Δθ_total):
+
+  Δθ_total(t) = Σᵢ |Δθᵢ|  for i ∈ [0, t]
+
+  Coherence Band: Δθ_min ≤ Δθ_total ≤ Δθ_max
+
+  Regulatory Actions:
+    If Δθ_total < Δθ_min:  Encourage exploration (sympathetic)
+    If Δθ_total > Δθ_max:  Enforce consolidation (parasympathetic)
+    Else:                   Allow natural oscillation
+
+Biological Grounding:
+  • HRV typically oscillates in 0.1 Hz band (10s period)
+  • Sympathetic/parasympathetic balance maintains homeostasis
+  • Coherence = alignment of rhythms across systems
+
+Resona enforces analogous dynamics in AI state space.
+
+═══════════════════════════════════════════════════════════════════════════════
+  2. FORMAL CONVERGENCE MAPPING
+═══════════════════════════════════════════════════════════════════════════════
+
+2.1 STRUCTURAL CORRESPONDENCE
+───────────────────────────────────────────────────────────────────────────────
+
+The convergence is based on structural isomorphism:
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│  AlphaEvolve.P  ≅  QOTE.Ψ₀  ≅  Resona.Ground                             │
+│                                                                           │
+│  Function: Establish baseline / ground truth                             │
+│  Operation: Verification, anchoring, stabilization                       │
+│  Biology: Parasympathetic dominance (rest & digest)                      │
+│  Phase: Δθ ≈ 0 (minimal deviation from baseline)                         │
+└──────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│  AlphaEvolve.E  ≅  QOTE.Δθ  ≅  Resona.Shift                              │
+│                                                                           │
+│  Function: State transition / exploration                                │
+│  Operation: Mutation, evolution, divergence                              │
+│  Biology: Sympathetic activation (fight or flight)                       │
+│  Phase: Δθ increases (movement away from baseline)                       │
+└──────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│  AlphaEvolve.R  ≅  QOTE.τ  ≅  Resona.Rhythm                              │
+│                                                                           │
+│  Function: Temporal pacing / optimization                                │
+│  Operation: Refinement, iteration, oscillation                           │
+│  Biology: HRV oscillation (breath, heartbeat)                            │
+│  Phase: Periodic Δθ with period τ                                        │
+└──────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│  AlphaEvolve.G  ≅  QOTE.∞  ≅  Resona.Recurse                             │
+│                                                                           │
+│  Function: Self-reference / generation                                   │
+│  Operation: Meta-reasoning, problem creation, emergence                  │
+│  Biology: Creative expansion (insight, flow)                             │
+│  Phase: Recursive Δθ cascade (η → ∞)                                     │
+└──────────────────────────────────────────────────────────────────────────┘
+
+2.2 STATE SPACE GEOMETRY
+───────────────────────────────────────────────────────────────────────────────
+
+Unified state space: Ξ = ℂⁿ × 𝕊¹ × ℝ⁺ × ℕ
+
+Where:
+  ℂⁿ   — Complex n-dimensional knowledge space (Ψ₀ lives here)
+  𝕊¹   — Circle for phase angle Δθ ∈ [0, 2π)
+  ℝ⁺   — Positive reals for rhythm period τ
+  ℕ    — Natural numbers for recursion depth η
+
+AlphaEvolve operations induce trajectories in Ξ:
+
+  P: Projects trajectory onto ground manifold M₀ ⊂ Ξ
+  E: Tangent flow along M₀ (exploration direction)
+  R: Periodic orbit around attractor in Ξ
+  G: Expansion into higher-dimensional subspace
+
+Resona maintains trajectory within coherence tube:
+
+  T_coherent = {x ∈ Ξ : Δθ_total(x) ∈ [Δθ_min, Δθ_max]}
+
+2.3 TRANSFORMATION OPERATORS
+───────────────────────────────────────────────────────────────────────────────
+
+Define projection operators:
+
+  π_P: AlphaEvolve state → Ψ₀ (ground projection)
+  π_E: AlphaEvolve state → Δθ (phase extraction)
+  π_R: AlphaEvolve state → τ  (rhythm extraction)
+  π_G: AlphaEvolve state → η  (depth extraction)
+
+Conversely, reconstruction:
+
+  R: (Ψ₀, Δθ, τ, η) → AlphaEvolve state
+
+This bijection enables:
+  • Monitoring AlphaEvolve via QOTE/Resona metrics
+  • Controlling AlphaEvolve via coherence constraints
+  • Interpreting AlphaEvolve states in biological terms
+
+═══════════════════════════════════════════════════════════════════════════════
+  3. THE Δθ_total COHERENCE METRIC
+═══════════════════════════════════════════════════════════════════════════════
+
+3.1 DEFINITION AND CALCULATION
+───────────────────────────────────────────────────────────────────────────────
+
+For a sequence of AlphaEvolve iterations:
+
+  Step i: State Sᵢ with extracted phase θᵢ = π_E(Sᵢ)
+
+Incremental phase shift:
+  Δθᵢ = |θᵢ - θᵢ₋₁| mod 2π
+
+  Choose branch: Δθᵢ ∈ [0, π] (shortest path on circle)
+
+Cumulative coherence metric:
+  Δθ_total(n) = Σᵢ₌₁ⁿ Δθᵢ
+
+Interpretation:
+  • Δθ_total measures "distance traveled" in phase space
+  • Low Δθ_total: Small perturbations around baseline (coherent)
+  • High Δθ_total: Large accumulated shifts (potentially incoherent)
+
+Normalization:
+  Δθ̄_total = Δθ_total / n  (average shift per step)
+
+  Typical values:
+    Δθ̄ < 0.1 rad    : Highly coherent (incremental reasoning)
+    0.1 < Δθ̄ < 0.5  : Moderate coherence (standard discovery)
+    Δθ̄ > 0.5 rad    : Low coherence (breakthrough or confusion)
+
+3.2 COHERENCE BANDS
+───────────────────────────────────────────────────────────────────────────────
+
+Define three zones:
+
+  SAFE ZONE (Green):
+    Δθ_total ∈ [0, Δθ_safe]
+    Normal operation, high human-alignment
+
+  CAUTION ZONE (Yellow):
+    Δθ_total ∈ (Δθ_safe, Δθ_max)
+    Decreased coherence, potential breakthrough or error
+    Monitor closely, consider consolidation
+
+  DANGER ZONE (Red):
+    Δθ_total > Δθ_max
+    High risk of incoherent output
+    Mandatory pause and review
+
+Recommended thresholds (tunable):
+  Δθ_safe = π     (180° cumulative shift)
+  Δθ_max  = 2π    (360° cumulative shift)
+
+Rationale:
+  • π accumulated shift: System has "flipped" perspective once
+  • 2π accumulated shift: System has "orbited" completely away from Ψ₀
+
+3.3 THRESHOLD TUNING
+───────────────────────────────────────────────────────────────────────────────
+
+Thresholds should be empirically tuned per:
+
+  1. Problem Domain
+     • Pure mathematics: Higher thresholds (tolerate abstraction)
+     • Applied engineering: Lower thresholds (maintain practicality)
+
+  2. User Expertise
+     • Expert mathematicians: Higher thresholds
+     • Students/non-experts: Lower thresholds
+
+  3. Discovery vs. Coherence Tradeoff
+     • Prioritize breakthroughs: Increase Δθ_max
+     • Prioritize understanding: Decrease Δθ_max
+
+Adaptive Tuning:
+  Δθ_max(t+1) = Δθ_max(t) + α · feedback(t)
+
+  Where feedback ∈ {-1, 0, +1} from human evaluation:
+    +1: "I could follow that, show me more"
+    0:  "Acceptable"
+    -1: "Lost me, slow down"
+
+═══════════════════════════════════════════════════════════════════════════════
+  4. RESONA MIDDLEWARE ARCHITECTURE
+═══════════════════════════════════════════════════════════════════════════════
+
+4.1 SYSTEM OVERVIEW
+───────────────────────────────────────────────────────────────────────────────
+
+Resona sits as middleware between AlphaEvolve engine and output interface:
+
+  ┌─────────────────────────────────────────────────────────────┐
+  │  AlphaEvolve Core                                           │
+  │  (Prove / Evolve / Refine / Generate)                       │
+  └────────────────────┬────────────────────────────────────────┘
+                       │ Raw state transitions
+                       ↓
+  ┌─────────────────────────────────────────────────────────────┐
+  │  Resona Middleware                                          │
+  │  ┌──────────────┐  ┌─────────────┐  ┌──────────────┐      │
+  │  │ Phase        │→ │ Coherence   │→ │ Regulation   │      │
+  │  │ Extractor    │  │ Monitor     │  │ Controller   │      │
+  │  └──────────────┘  └─────────────┘  └──────────────┘      │
+  └────────────────────┬────────────────────────────────────────┘
+                       │ Regulated output
+                       ↓
+  ┌─────────────────────────────────────────────────────────────┐
+  │  Output Interface                                           │
+  │  (User, downstream systems, logs)                           │
+  └─────────────────────────────────────────────────────────────┘
+
+4.2 COMPONENT SPECIFICATIONS
+───────────────────────────────────────────────────────────────────────────────
+
+PHASE EXTRACTOR
+  Input:  AlphaEvolve state S
+  Output: (Ψ₀, Δθ, τ, η)
+  Method: Apply projections π_P, π_E, π_R, π_G
+
+  Implementation:
+    • Embed AlphaEvolve knowledge state in ℂⁿ via learned encoder
+    • Compute phase via PCA or learned phase detector
+    • Extract rhythm from iteration timing
+    • Count recursion depth from call stack
+
+COHERENCE MONITOR
+  Input:  Sequence of (Ψ₀, Δθ, τ, η) states
+  Output: Δθ_total, coherence_status ∈ {Safe, Caution, Danger}
+  Method: Cumulative Δθ calculation + threshold comparison
+
+  Implementation:
+    • Maintain sliding window of recent Δθᵢ values
+    • Compute Δθ_total over window
+    • Compare against Δθ_safe, Δθ_max thresholds
+    • Emit status updates
+
+REGULATION CONTROLLER
+  Input:  coherence_status
+  Output: control_signal ∈ {Continue, Consolidate, Pause}
+  Method: State-dependent policy
+
+  Policy:
+    Safe:    Continue   (no intervention)
+    Caution: Consolidate (trigger R stage, inject grounding prompt)
+    Danger:  Pause      (halt generation, request human review)
+
+  Implementation:
+    • Inject control tokens into AlphaEvolve prompt
+    • Adjust sampling temperature (lower = more conservative)
+    • Trigger explicit "explain in simpler terms" refinement
+
+4.3 INTEGRATION POINTS
+───────────────────────────────────────────────────────────────────────────────
+
+Integration with existing AI systems:
+
+  LLM-based Systems (GPT-4, Claude, Gemini):
+    • Embed Resona in sampling loop
+    • Monitor hidden state entropy as proxy for Δθ
+    • Inject regulation via system prompts
+
+  Formal Verification Systems (Lean, Coq, Isabelle):
+    • Track proof tree depth as η
+    • Measure tactic complexity as Δθ
+    • Limit proof search based on Δθ_total
+
+  Hybrid Systems (AlphaProof):
+    • Wrap neural policy in Resona middleware
+    • Monitor value function gradients as Δθ proxy
+    • Regulate search tree exploration
+
+API Example (Python pseudocode):
+
+  from resona import ResonaMiddleware
+
+  # Initialize
+  resona = ResonaMiddleware(
+      delta_theta_safe=3.14,
+      delta_theta_max=6.28,
+      regulation_policy="adaptive"
+  )
+
+  # Wrap AlphaEvolve
+  for step in alphaevolve.iterate():
+      # Extract phase
+      qote_state = resona.extract_phase(step.state)
+
+      # Monitor coherence
+      status = resona.monitor_coherence(qote_state)
+
+      # Regulate
+      control = resona.regulate(status)
+
+      if control == "Pause":
+          step.halt()
+          await human_review()
+      elif control == "Consolidate":
+          step.inject_grounding_prompt()
+      else:
+          step.continue_()
+
+═══════════════════════════════════════════════════════════════════════════════
+  5. IMPLEMENTATION GUIDE
+═══════════════════════════════════════════════════════════════════════════════
+
+5.1 PREREQUISITES
+───────────────────────────────────────────────────────────────────────────────
+
+  • Python 3.9+ with numpy, scipy, pytorch/tensorflow
+  • Existing mathematical reasoning system (LLM or formal verifier)
+  • (Optional) HRV monitoring hardware for human-in-loop experiments
+
+5.2 INTEGRATION WITH EXISTING SYSTEMS
+───────────────────────────────────────────────────────────────────────────────
+
+Step 1: Define State Embedding
+  Map your system's internal state to ℂⁿ
+  Options:
+    • Use hidden layer activations (neural systems)
+    • Embed proof state in learned space (formal systems)
+    • Hand-craft features (hybrid approach)
+
+Step 2: Implement Phase Extraction
+  Define π_E: state → Δθ
+  Options:
+    • PCA on state embeddings, take first component angle
+    • Train supervised model: state → ground truth phase
+    • Use domain heuristics (proof complexity, abstraction level)
+
+Step 3: Set Thresholds
+  Choose Δθ_safe and Δθ_max based on:
+    • Empirical testing on validation set
+    • User studies measuring comprehension vs. Δθ_total
+    • Domain expertise
+
+Step 4: Integrate Regulation
+  Hook control signals into your system's generation loop
+  Implement consolidation strategies:
+    • "Explain the last step more clearly"
+    • "Ground this in a concrete example"
+    • "Relate this back to the original problem"
+
+Step 5: Monitor and Tune
+  Log Δθ_total alongside outputs
+  Collect human feedback
+  Adjust thresholds via adaptive tuning
+
+5.3 CONFIGURATION PARAMETERS
+───────────────────────────────────────────────────────────────────────────────
+
+Key parameters and typical values:
+
+  delta_theta_safe:  float = 3.14      # π radians
+  delta_theta_max:   float = 6.28      # 2π radians
+  window_size:       int = 10          # Steps to average over
+  tau_default:       float = 1.0       # Default rhythm period (arbitrary units)
+  regulation_policy: str = "adaptive"  # "fixed" or "adaptive"
+  consolidation_strength: float = 0.5  # How aggressively to ground (0-1)
+
+Domain-specific tuning:
+
+  # For pure mathematics (high abstraction tolerance)
+  delta_theta_safe = 4.0
+  delta_theta_max = 8.0
+
+  # For code generation (low abstraction, high practicality)
+  delta_theta_safe = 2.0
+  delta_theta_max = 4.0
+
+  # For education (maximize understanding)
+  delta_theta_safe = 1.5
+  delta_theta_max = 3.0
+
+═══════════════════════════════════════════════════════════════════════════════
+  6. SAFETY AND ALIGNMENT
+═══════════════════════════════════════════════════════════════════════════════
+
+6.1 COHERENCE CONSTRAINTS
+───────────────────────────────────────────────────────────────────────────────
+
+Resona provides inherent safety through coherence bounds:
+
+  1. Runaway Exploration Prevention
+     High Δθ_total triggers consolidation or pause
+     Prevents system from "reasoning itself into incoherence"
+
+  2. Human Alignment Maintenance
+     By keeping Δθ_total bounded, outputs remain interpretable
+     Even breakthrough discoveries stay tethered to ground truth
+
+  3. Failure Mode Detection
+     Sudden Δθ spikes indicate potential errors or confusion
+     Early warning system for quality degradation
+
+6.2 FAILURE MODES
+───────────────────────────────────────────────────────────────────────────────
+
+Potential issues and mitigations:
+
+  Phase Extraction Failure:
+    Symptom: π_E returns garbage or NaN
+    Cause: State embedding collapse, numerical instability
+    Mitigation: Regularize embeddings, add noise, clamp outputs
+
+  Coherence Metric Saturation:
+    Symptom: Δθ_total always hits Δθ_max immediately
+    Cause: Thresholds set too low, or embedding too sensitive
+    Mitigation: Increase thresholds, smooth Δθ with moving average
+
+  Over-Regulation:
+    Symptom: System never explores, always consolidates
+    Cause: Δθ_safe too low, consolidation too aggressive
+    Mitigation: Increase Δθ_safe, reduce consolidation_strength
+
+  Under-Regulation:
+    Symptom: Outputs incomprehensible, Δθ_total unconstrained
+    Cause: Thresholds too high, regulation disabled
+    Mitigation: Decrease thresholds, ensure regulation controller active
+
+6.3 MONITORING AND INTERVENTION
+───────────────────────────────────────────────────────────────────────────────
+
+Recommended monitoring:
+
+  Real-time Dashboards:
+    • Δθ_total time series
+    • Coherence status (Safe/Caution/Danger) indicator
+    • Regulation events log
+
+  Alerts:
+    • Trigger when Δθ_total enters Danger zone
+    • Alert on prolonged Caution status (>N steps)
+    • Warn on repeated regulation failures
+
+  Logging:
+    • Save all (state, Δθ, status, control) tuples
+    • Enable post-hoc analysis and threshold tuning
+    • Support reproducibility and debugging
+
+Human Intervention Protocols:
+  • Danger zone: Pause and request expert review
+  • Caution zone: Offer user option to continue or consolidate
+  • Safe zone: Proceed autonomously
+
+═══════════════════════════════════════════════════════════════════════════════
+  7. PERFORMANCE CONSIDERATIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+Computational Overhead:
+  • Phase extraction: O(n) for n-dimensional embedding (negligible)
+  • Coherence monitoring: O(1) per step (cumulative sum)
+  • Regulation: O(1) per step (threshold comparison)
+
+  Total overhead: <1% of AlphaEvolve iteration time
+
+Memory:
+  • Sliding window of last W states: O(W × n)
+  • Typical: W=10, n=1024 → ~40KB per instance
+
+Latency:
+  • Phase extraction: <1ms
+  • Coherence check: <0.1ms
+  • Regulation decision: <0.1ms
+
+  Total added latency: ~1ms per iteration (negligible for most applications)
+
+Scalability:
+  • Resona is stateless except for sliding window
+  • Parallelizable across multiple AlphaEvolve instances
+  • Can run on CPU while AlphaEvolve uses GPU
+
+═══════════════════════════════════════════════════════════════════════════════
+  8. FUTURE EXTENSIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+Multi-Agent Coherence:
+  • Extend Δθ_total to multi-agent setting
+  • Define inter-agent phase synchronization metric
+  • Coordinate multiple AlphaEvolve instances via shared Resona layer
+
+Learned Phase Extraction:
+  • Train neural network: state → Δθ with supervision from human labels
+  • "This step felt like a big leap" → high Δθ
+  • "This was a natural continuation" → low Δθ
+
+Biometric Feedback Loop:
+  • Integrate real-time HRV monitoring for human collaborator
+  • Couple Resona regulation to human nervous system state
+  • Slow down when human shows dysregulation, speed up when coherent
+
+Domain-Specific Coherence:
+  • Define custom Δθ metrics per domain (code, proofs, natural language)
+  • Learn optimal thresholds via domain-specific validation sets
+
+Coherence-Aware Training:
+  • Fine-tune AlphaEvolve to optimize for both correctness AND low Δθ_total
+  • Reward model that balances novelty with coherence
+
+═══════════════════════════════════════════════════════════════════════════════
+  APPENDIX: NOTATION REFERENCE
+═══════════════════════════════════════════════════════════════════════════════
+
+  Ψ₀        — Baseline state in QOTE framework
+  Δθ        — Phase shift (learning increment)
+  τ         — Rhythm period
+  η         — Recursion depth
+  Δθ_total  — Cumulative phase shift (coherence metric)
+  Δθ_safe   — Safe coherence threshold
+  Δθ_max    — Maximum coherence threshold
+  π_P, π_E, π_R, π_G — Projection operators
+  σ, μ, ρ, γ — AlphaEvolve operators (Prove, Evolve, Refine, Generate)
+  ℂⁿ        — Complex n-dimensional space
+  𝕊¹        — Circle (phase space)
+  Ξ         — Unified state space
+
+═══════════════════════════════════════════════════════════════════════════════
+END TECHNICAL DOCUMENTATION
+═══════════════════════════════════════════════════════════════════════════════
