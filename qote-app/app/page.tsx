@@ -21,6 +21,9 @@ export default function Home() {
                 Docs
               </Link>
               <Link href="/visualization" className="text-foreground hover:text-primary transition">
+              <Link href="/hopf-tree-lab" className="text-foreground hover:text-warning transition">
+                Hopf Tree Lab
+              </Link>
                 Visualization
               </Link>
             </div>
@@ -41,6 +44,12 @@ export default function Home() {
             that respects biological coherence patterns
           </p>
           <div className="flex justify-center space-x-4">
+            <Link
+              href="/hopf-tree-lab"
+              className="px-8 py-4 bg-warning text-background font-bold rounded-lg hover:bg-accent transition transform hover:scale-105"
+            >
+              Try Hopf Tree Lab
+            </Link>
             <Link
               href="/docs"
               className="px-8 py-4 bg-primary text-background font-bold rounded-lg hover:bg-accent transition transform hover:scale-105"
