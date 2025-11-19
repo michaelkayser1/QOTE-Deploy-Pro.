@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #050910 0%, #0a1020 50%, #0d0820 100%);
+    color: #e0e6ed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 2.5rem 1rem 2rem;
+    background: linear-gradient(180deg, rgba(20, 30, 48, 0.6) 0%, rgba(15, 20, 35, 0.3) 100%);
+    border-bottom: 1px solid rgba(100, 200, 200, 0.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #4dd0e1 0%, #9575cd 50%, #ffd54f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #b0c4de;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Main Container */
+.container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Sections */
+.input-section,
+.output-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-section h2,
+.output-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #4dd0e1;
+    letter-spacing: 0.5px;
+}
+
+/* Textarea */
+.glyph-textarea {
+    flex: 1;
+    background: rgba(20, 30, 48, 0.7);
+    border: 1px solid rgba(77, 208, 225, 0.3);
+    border-radius: 12px;
+    padding: 1.25rem;
+    color: #e0e6ed;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+    resize: vertical;
+    min-height: 400px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.glyph-textarea:focus {
+    outline: none;
+    border-color: rgba(77, 208, 225, 0.6);
+    box-shadow: 0 0 20px rgba(77, 208, 225, 0.2);
+}
+
+.glyph-textarea::placeholder {
+    color: #6b7b8c;
+    font-style: italic;
+}
+
+/* Decode Button */
+.decode-button {
+    margin-top: 1rem;
+    padding: 0.9rem 2rem;
+    background: linear-gradient(135deg, #4dd0e1 0%, #26a69a 100%);
+    color: #0a0e14;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(77, 208, 225, 0.3);
+    letter-spacing: 0.5px;
+}
+
+.decode-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(77, 208, 225, 0.5);
+    background: linear-gradient(135deg, #26c6da 0%, #00897b 100%);
+}
+
+.decode-button:active {
+    transform: translateY(0);
+}
+
+/* Output Section */
+.decode-output {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Decode Card */
+.decode-card {
+    background: linear-gradient(135deg, rgba(30, 40, 60, 0.8) 0%, rgba(20, 30, 50, 0.6) 100%);
+    border: 1px solid rgba(149, 117, 205, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.decode-card:hover {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 8px 30px rgba(149, 117, 205, 0.3), 0 0 20px rgba(77, 208, 225, 0.15);
+    border-color: rgba(149, 117, 205, 0.5);
+}
+
+.row-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #ffd54f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+}
+
+.glyph-line {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    color: #4dd0e1;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: rgba(10, 15, 25, 0.5);
+    border-radius: 6px;
+    border-left: 3px solid #9575cd;
+    line-height: 1.6;
+}
+
+.decode-text {
+    color: #b0c4de;
+    font-size: 1rem;
+    line-height: 1.7;
+    white-space: pre-line;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(15, 20, 35, 0.5);
+    border-top: 1px solid rgba(100, 200, 200, 0.1);
+    color: #6b7b8c;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .glyph-textarea {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.6rem;
+    }
+
+    .header {
+        padding: 1.5rem 1rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    .decode-card {
+        padding: 1rem;
+    }
+}
