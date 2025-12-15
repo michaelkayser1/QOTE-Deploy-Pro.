@@ -5,6 +5,7 @@ Modern web application showcasing the convergence framework for AI-accelerated m
 ## 🌟 Features
 
 - **Interactive Landing Page** - Sleek introduction to the convergence
+- **Architecture Dashboard** - Visual demonstration of Local Domains and Hinge Planes
 - **Live Visualization** - Real-time canvas animation showing discovery breathing
 - **Documentation Browser** - All framework docs in an elegant interface
 - **Fully Responsive** - Works on desktop, tablet, and mobile
@@ -34,14 +35,24 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 qote-app/
 ├── app/
 │   ├── page.tsx              # Home page
+│   ├── architecture/
+│   │   └── page.tsx          # Architecture dashboard
 │   ├── docs/
 │   │   └── page.tsx          # Documentation browser
 │   ├── visualization/
 │   │   └── page.tsx          # Interactive visualization
 │   ├── layout.tsx            # Root layout
 │   └── globals.css           # Global styles
-├── public/                   # Static assets
-├── components/               # Reusable components (if needed)
+├── components/
+│   ├── ArchitectureDiagram.tsx  # Main architecture orchestrator
+│   ├── DomainCard.tsx           # Domain display component
+│   ├── HingePlane.tsx           # Hinge interface component
+│   ├── MetricsPanel.tsx         # Health metrics display
+│   └── ui/                      # shadcn/ui components
+├── lib/
+│   ├── types.ts              # TypeScript interfaces
+│   ├── examples.ts           # Architecture examples data
+│   └── utils.ts              # Utility functions
 ├── package.json
 ├── tailwind.config.ts
 ├── tsconfig.json
@@ -53,6 +64,9 @@ qote-app/
 - **Framework:** Next.js 16 (App Router)
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS v4
+- **UI Components:** shadcn/ui with Radix UI primitives
+- **Icons:** Lucide React
+- **Charts:** Recharts (optional)
 - **Build Tool:** Turbopack
 - **Deployment:** Vercel (recommended)
 
@@ -64,6 +78,15 @@ qote-app/
 - Δθ_total metric explanation
 - Use cases grid
 - Mantras and call-to-action
+
+### Architecture Dashboard (`/architecture`)
+- Interactive visualization of Local Domains and Hinge Planes
+- 4 domain cards showing internal coherence and export formats
+- 3 hinge plane cards demonstrating geometric rotations
+- Architecture health metrics (coupling, clarity, iteration speed, curvature)
+- Toggle between healthy and monolithic architecture examples
+- Hover effects showing domain-hinge relationships
+- Educational tool for software architecture principles
 
 ### Visualization (`/visualization`)
 - Full-screen canvas animation
@@ -94,6 +117,7 @@ colors: {
 
 ### Content
 - Home page content: `app/page.tsx`
+- Architecture examples: `lib/examples.ts`
 - Documentation: `app/docs/page.tsx` (docs array)
 - Visualization: `app/visualization/page.tsx`
 
