@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cd qote-app && npm run build",
-  "devCommand": "cd qote-app && npm run dev",
-  "installCommand": "cd qote-app && npm install",
-  "outputDirectory": "qote-app/.next"
+  "buildCommand": "cd coherence-sentinel && npm run build",
+  "devCommand": "cd coherence-sentinel && npm run dev",
+  "installCommand": "cd coherence-sentinel && npm install",
+  "outputDirectory": "coherence-sentinel/.next"
 }
