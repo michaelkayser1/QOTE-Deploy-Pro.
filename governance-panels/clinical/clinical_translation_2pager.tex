@@ -1,0 +1,298 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{fontspec}
+\setmainfont{Arial}
+
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,calc,decorations.pathreplacing}
+
+% Color scheme
+\definecolor{qoteblue}{RGB}{46, 134, 171}
+\definecolor{qotepurple}{RGB}{162, 59, 114}
+\definecolor{qotegreen}{RGB}{6, 167, 125}
+\definecolor{qoteorange}{RGB}{241, 143, 1}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+{\Huge\bfseries Biological Governance Through Chromatin Topology}\\[6pt]
+{\Large TORD Framework: Clinical Translation}\\[4pt]
+{\large Risk, Resilience, and Recovery in Topological Medicine}\\[8pt]
+\hrule height 2pt
+\end{center}
+
+\vspace{8pt}
+
+% ============================================================================
+% PAGE 1: FRAMEWORK
+% ============================================================================
+
+\begin{multicols}{2}
+
+\section*{Core Framework: TORD Model}
+
+\textbf{Topological Oscillator with Repair Delay (TORD)} formalizes biological governance as chromatin topology dynamics:
+
+\begin{tcolorbox}[colback=qoteblue!5, colframe=qoteblue, title=State Variables]
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item \textbf{$x(t)$}: Chromatin accessibility (ATAC-seq, DNase-seq)
+    \item \textbf{$y(t)$}: Repair system activity ($\gamma$H2AX, 53BP1 foci)
+    \item \textbf{$\Theta(t)$}: Topological boundary strength (Hi-C insulation)
+    \item \textbf{$u(t)$}: Environmental perturbation (stress, damage, hormones)
+    \item \textbf{$\eta$}: Repair delay (context-dependent: 20min--4hr)
+\end{itemize}
+\end{tcolorbox}
+
+\subsection*{Differential Equations}
+
+\begin{align*}
+\frac{d^2 x}{dt^2} &= -\omega_x^2 x - \gamma_x \frac{dx}{dt} - \alpha y(t-\eta) + \mu u(t)\\
+\frac{d^2 y}{dt^2} &= -\omega_y^2 y - \gamma_y \frac{dy}{dt} + \beta x(t)\\
+\frac{d\Theta}{dt} &= \kappa |x|^2 - \lambda \Theta
+\end{align*}
+
+\textbf{Key mechanisms:}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item \textcolor{qotepurple}{\textbf{Delayed feedback}} $y(t-\eta)$: Repair prioritization creates vulnerability windows
+    \item \textcolor{qotegreen}{\textbf{Activity-dependent reinforcement}} $\kappa |x|^2$: Fluctuations strengthen boundaries
+    \item \textcolor{qoteorange}{\textbf{Stress-induced erosion}} $-\lambda \Theta$: Chronic perturbation degrades topology
+\end{itemize}
+
+\subsection*{Six-Layer Evidence Stack}
+
+\begin{enumerate}[leftmargin=*, itemsep=3pt]
+    \item \textbf{Chromatin topology $\to$ mutation hotspots}\\
+    Replication timing (RT) and chromatin accessibility (CA) predict mutation patterns genome-wide (Stamatoyannopoulos et al. \textit{Nature} 2009; PCAWG \textit{Nature} 2020).
+
+    \item \textbf{Cancer/aging are topology-first phenomena}\\
+    Altered replication timing (ART) precedes mutation accumulation. Partially methylated domains (PMDs) track mitotic age, not just damage (Ryba et al. \textit{Genome Res} 2011; Zhou et al. \textit{Nat Genet} 2018).
+
+    \item \textbf{Identity encoded as attractor}\\
+    Persistent chromatin loops at learning genes in engram neurons last weeks, stable across recall events (Chen et al. \textit{Nature Neurosci} 2024).
+
+    \item \textbf{UV damage reveals governance priorities}\\
+    Nucleotide excision repair (NER) prioritizes \emph{accessible} chromatin over damage sites—repair follows topology, not just lesion density (Adar et al. \textit{Genome Res} 2016).
+
+    \item \textbf{Every TORD element has biological mapping}\\
+    $\omega_x$ (circadian accessibility), $\eta$ (NER delay 20min, DSB hours), $\kappa$ (HDAC/HAT balance), $\lambda$ (aging, inflammation).
+
+    \item \textbf{Structure emerges from the floor}\\
+    Boundary sharpening through coherence gating (SLFN5), reinscription via 53BP1 foci (Chiolo et al. \textit{Cell} 2011).
+\end{enumerate}
+
+\columnbreak
+
+\subsection*{Biological Scenarios}
+
+\begin{tcolorbox}[colback=qotepurple!5, colframe=qotepurple, title=\textbf{1. Engram Memory Persistence}]
+\textbf{Biology:} Persistent chromatin loops at learning loci (Chen et al. 2024)\\
+\textbf{Parameters:} High $\kappa$ (strong reinforcement), low $\lambda$ (weeks-long stability)\\
+\textbf{Clinical:} Memory consolidation, PTSD reconsolidation, learning optimization
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=qotegreen!5, colframe=qotegreen, title=\textbf{2. HPA Stress Response}]
+\textbf{Biology:} Glucocorticoid receptor (NR3C1), FKBP5 feedback loop\\
+\textbf{Parameters:} High $\mu$ (stress coupling), moderate $\lambda$ (boundary erosion), $\eta \sim 2$--4hr\\
+\textbf{Clinical:} HRV biofeedback, burnout prevention, dissociative episode reduction
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=qoteorange!5, colframe=qoteorange, title=\textbf{3. UV Damage Triage}]
+\textbf{Biology:} NER prioritizes accessible sites (Adar et al. 2016)\\
+\textbf{Parameters:} Fast $\eta$ (20min), high $\beta$ (damage sensing), strong $\alpha$ feedback\\
+\textbf{Clinical:} Mutation risk stratification, skin cancer prevention, DNA repair deficiency syndromes
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=qoteblue!5, colframe=qoteblue, title=\textbf{4. Developmental Boundaries}]
+\textbf{Biology:} Mechanotransduction, TAD boundary formation\\
+\textbf{Parameters:} Very high $\kappa$ (strong formation), ultra-low $\lambda$ (permanent), fast $\omega_x$\\
+\textbf{Clinical:} Developmental origins of disease (DOHaD), congenital disorders, tissue engineering
+\end{tcolorbox}
+
+\subsection*{Testable Predictions}
+
+\begin{enumerate}[leftmargin=*, itemsep=2pt]
+    \item \textbf{RT/CA mutation correlations:} Model predicts hotspots at late-replicating, accessible loci
+    \item \textbf{Repair delay quantification:} Measure $\eta$ via time-resolved $\gamma$H2AX after UV pulse
+    \item \textbf{Boundary stability in aging:} Track $\Theta(t)$ via Hi-C insulation scores longitudinally
+    \item \textbf{Stress-induced $\lambda$ changes:} Chronic inflammation should increase boundary decay
+    \item \textbf{Engram loop persistence:} Weeks-long loops at learning genes (confirmed: Chen et al. 2024)
+\end{enumerate}
+
+\end{multicols}
+
+\newpage
+
+% ============================================================================
+% PAGE 2: CLINICAL TRANSLATION
+% ============================================================================
+
+\begin{center}
+{\Huge\bfseries Clinical Translation}\\[6pt]
+{\Large Risk, Resilience, and Recovery Framework}\\[8pt]
+\hrule height 2pt
+\end{center}
+
+\vspace{8pt}
+
+\begin{multicols}{2}
+
+\section*{The 3R Framework}
+
+TORD enables precision medicine through three governance dimensions:
+
+\subsection*{1. \textcolor{red}{Risk}: Topology-First Vulnerability}
+
+\textbf{Paradigm shift:} Disease risk is encoded in chromatin topology \emph{before} genetic damage.
+
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item \textbf{ART signature:} Altered replication timing predicts cancer decades before diagnosis
+    \item \textbf{PMD depth:} Mitotic clock tracks cellular age independent of chronological time
+    \item \textbf{Boundary instability:} Low $\Theta$ or high $\lambda$ indicates vulnerability
+\end{itemize}
+
+\textbf{Clinical applications:}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Early cancer detection (liquid biopsy for RT changes)
+    \item Aging biomarkers (PMD depth in cfDNA)
+    \item Neurodegenerative risk (engram loop instability)
+\end{itemize}
+
+\subsection*{2. \textcolor{qotegreen}{Resilience}: Boundary Strength as Capacity}
+
+\textbf{Core metric:} $\Theta(t)$ quantifies resilience—ability to maintain topology under perturbation.
+
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item \textbf{High $\Theta$, low $\lambda$:} Resilient (engram neurons, stem cells)
+    \item \textbf{Low $\Theta$, high $\lambda$:} Vulnerable (chronic stress, aging)
+    \item \textbf{Erosion rate $d\Theta/dt$:} Tracks burnout, disease progression
+\end{itemize}
+
+\textbf{Clinical monitoring:}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item HRV as proxy for $\Theta$ (autonomic coherence)
+    \item Hi-C insulation scores (direct measurement)
+    \item Inflammatory markers as $\lambda$ indicators (IL-6, TNF-$\alpha$)
+\end{itemize}
+
+\subsection*{3. \textcolor{qoteblue}{Recovery}: Reinscription and Repair}
+
+\textbf{Intervention targets:} Modulate TORD parameters to restore healthy topology.
+
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item \textbf{Increase $\kappa$:} Strengthen boundary formation (HDAC inhibitors, activity protocols)
+    \item \textbf{Decrease $\lambda$:} Stabilize boundaries (anti-inflammatory, CTCF/cohesin support)
+    \item \textbf{Optimize $\eta$:} Reduce repair delays (DNA repair enhancers, redox balance)
+    \item \textbf{Control $u(t)$:} Manage perturbation timing and amplitude (stress reduction, circadian alignment)
+\end{itemize}
+
+\columnbreak
+
+\section*{Clinical Workflows}
+
+\subsection*{HPA Stress \& Burnout}
+
+\textbf{Workflow:}
+\begin{enumerate}[leftmargin=*, itemsep=1pt]
+    \item Measure baseline $\Theta$ via HRV coherence
+    \item Track erosion rate $d\Theta/dt$ under occupational stress
+    \item Intervene when $\Theta < 0.7$ (boundary instability threshold)
+    \item Apply vagal tone training (increase $\kappa$), anti-inflammatory diet (decrease $\lambda$)
+    \item Monitor recovery via HRV biofeedback
+\end{enumerate}
+
+\textbf{Outcomes:}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Reduced dissociative episodes (stable $\Theta$)
+    \item Improved stress recovery time
+    \item Prevention of chronic burnout
+\end{itemize}
+
+\subsection*{Memory \& Learning}
+
+\textbf{Workflow:}
+\begin{enumerate}[leftmargin=*, itemsep=1pt]
+    \item Optimize recall timing (TORD predicts 10, 20, 30hr intervals)
+    \item Measure engram stability (fMRI, EEG coherence as $\Theta$ proxy)
+    \item Enhance $\kappa$ via acetylation (exercise, HDAC inhibitors)
+    \item PTSD: Controlled loop disruption during reconsolidation window
+\end{enumerate}
+
+\textbf{Outcomes:}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Enhanced memory consolidation
+    \item PTSD symptom reduction (loop destabilization)
+    \item Learning protocol optimization
+\end{itemize}
+
+\subsection*{Cancer Risk Stratification}
+
+\textbf{Workflow:}
+\begin{enumerate}[leftmargin=*, itemsep=1pt]
+    \item Liquid biopsy: Extract cfDNA, measure RT profile
+    \item Quantify ART signature (deviation from healthy baseline)
+    \item Map to TORD: High $\lambda$, low $\Theta$ = elevated risk
+    \item Intervention: Boundary-stabilizing therapies, inflammation control
+    \item Longitudinal tracking of $\Theta(t)$ trajectory
+\end{enumerate}
+
+\textbf{Outcomes:}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Early detection (years before clinical diagnosis)
+    \item Risk stratification for screening protocols
+    \item Personalized prevention strategies
+\end{itemize}
+
+\section*{Therapeutic Targets}
+
+\begin{table}[h]
+\small
+\begin{tabular}{|p{2.5cm}|p{2cm}|p{3.5cm}|}
+\hline
+\textbf{Parameter} & \textbf{Target} & \textbf{Intervention} \\
+\hline
+$\kappa$ (reinforce) & Increase & HDAC inhibitors, exercise, vagal training \\
+\hline
+$\lambda$ (decay) & Decrease & Anti-inflammatory, antioxidants, CTCF stabilizers \\
+\hline
+$\eta$ (delay) & Decrease & DNA repair enhancers, NAD+ boosters \\
+\hline
+$u(t)$ (stress) & Optimize & Circadian alignment, stress protocols, HRV biofeedback \\
+\hline
+\end{tabular}
+\end{table}
+
+\section*{Next Steps: Validation}
+
+\begin{enumerate}[leftmargin=*, itemsep=2pt]
+    \item \textbf{RT/CA data integration:} Fit TORD to CA2M repository mutation data
+    \item \textbf{HRV clinical trial:} Test $\Theta$ tracking in stress cohort
+    \item \textbf{Engram loop measurement:} Validate persistence timescales in human subjects
+    \item \textbf{Liquid biopsy pilot:} Measure ART signatures longitudinally
+    \item \textbf{Parameter optimization:} Use JAX autodiff to fit clinical data
+\end{enumerate}
+
+\end{multicols}
+
+\vfill
+
+\begin{center}
+\hrule height 1pt
+\vspace{4pt}
+\small
+\textbf{TORD Framework} $\mid$ Michael Kayser $\mid$ \today\\
+Formal bridge between physics (oscillator theory), biology (chromatin topology), and medicine (precision interventions)
+\end{center}
+
+\end{document}
