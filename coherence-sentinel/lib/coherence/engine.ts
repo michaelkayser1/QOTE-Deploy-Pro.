@@ -215,24 +215,82 @@ export function calculateMetabolicDrift(
 /**
  * Calculate autonomic stability from HRV
  *
- * PLACEHOLDER: Simplified proxy.
+ * Implements frequency-domain analysis (LF/HF ratio) for HRV assessment.
  *
- * TODO: Implement proper frequency-domain analysis (LF/HF ratio, etc.)
+ * LF (Low Frequency): 0.04-0.15 Hz - sympathetic and parasympathetic activity
+ * HF (High Frequency): 0.15-0.4 Hz - parasympathetic (vagal) activity
+ * LF/HF ratio: autonomic balance indicator
  */
 export function calculateAutonomicStability(
-  hrvValues: number[] // HRV in milliseconds
+  hrvValues: number[], // HRV in milliseconds
+  samplingRate: number = 4 // Hz, typical for HRV measurements
 ): number {
-  if (hrvValues.length === 0) return 0;
+  if (hrvValues.length < 10) return 0;
 
+  // Remove mean (detrend)
   const mean = hrvValues.reduce((a, b) => a + b, 0) / hrvValues.length;
-  const variance = hrvValues.reduce((sum, val) => sum + Math.pow(val - mean, 2), 0) / hrvValues.length;
-  const cv = Math.sqrt(variance) / mean; // Coefficient of variation
+  const detrendedHRV = hrvValues.map(v => v - mean);
 
-  // Lower CV = more stable
-  // Map to 0-100 scale (assuming CV typically in 0-0.5 range)
-  const stability = Math.max(0, Math.min(100, 100 * (1 - Math.min(cv, 0.5) / 0.5)));
+  // Calculate power spectral density using periodogram approach
+  const N = hrvValues.length;
+  const frequencyResolution = samplingRate / N;
 
-  return stability;
+  // Frequency bands
+  const LF_MIN = 0.04; // Hz
+  const LF_MAX = 0.15; // Hz
+  const HF_MIN = 0.15; // Hz
+  const HF_MAX = 0.4;  // Hz
+
+  let lfPower = 0;
+  let hfPower = 0;
+
+  // Calculate power spectrum using DFT for relevant frequencies
+  // We only need to calculate for LF and HF bands, not full spectrum
+  for (let k = 0; k < N / 2; k++) {
+    const freq = k * frequencyResolution;
+
+    // Skip frequencies outside our bands of interest
+    if (freq < LF_MIN || freq > HF_MAX) continue;
+
+    // Calculate DFT coefficient for this frequency
+    let real = 0;
+    let imag = 0;
+    for (let n = 0; n < N; n++) {
+      const angle = (2 * Math.PI * k * n) / N;
+      real += detrendedHRV[n] * Math.cos(angle);
+      imag += detrendedHRV[n] * Math.sin(angle);
+    }
+
+    // Power = |X[k]|^2 / N
+    const power = (real * real + imag * imag) / N;
+
+    // Accumulate power in appropriate band
+    if (freq >= LF_MIN && freq < LF_MAX) {
+      lfPower += power;
+    } else if (freq >= HF_MIN && freq <= HF_MAX) {
+      hfPower += power;
+    }
+  }
+
+  // Calculate LF/HF ratio
+  const lfHfRatio = hfPower > 0 ? lfPower / hfPower : 10; // Default to high ratio if no HF power
+
+  // Convert LF/HF ratio to stability score (0-100)
+  // Optimal LF/HF ratio is typically 1-3
+  // Lower ratio (< 1) or very high ratio (> 10) indicates imbalance
+  let stability: number;
+  if (lfHfRatio >= 1 && lfHfRatio <= 3) {
+    // Optimal range - high stability
+    stability = 100 - (Math.abs(lfHfRatio - 2) / 1) * 20; // Peak at ratio = 2
+  } else if (lfHfRatio < 1) {
+    // Low ratio - parasympathetic dominance
+    stability = 60 + lfHfRatio * 20;
+  } else {
+    // High ratio - sympathetic dominance
+    stability = Math.max(0, 60 - (lfHfRatio - 3) * 10);
+  }
+
+  return Math.max(0, Math.min(100, stability));
 }
 
 /**
