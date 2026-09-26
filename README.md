@@ -1,5 +1,7 @@
 # QOTE × AlphaEvolve × Resona
 
+> **Historical research archive (September 2026).** This repository preserves exploratory language, hypotheses, proposed thresholds, and illustrative code as they appeared in the early work. The π/2π bands, biological mappings, and claims of inevitable alignment have not been validated as AI safety criteria. Examples are conceptual and should not be represented as functioning clinical or production controls. Current [Resona OS work](https://github.com/michaelkayser1/Resona-OS) examines authority, evidence, reversibility, and auditability independently of these claims. This note adds context; the original material below remains intact as a dated record.
+
 > **When Mathematics Learned to Breathe**
 
 A convergence framework for AI-accelerated mathematical discovery that respects biological coherence patterns.
