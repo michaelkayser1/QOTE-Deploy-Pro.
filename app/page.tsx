@@ -219,6 +219,9 @@ export default function QOTEWarpGeometry() {
           <h1 className="text-3xl md:text-5xl font-bold text-center mb-4 text-white text-balance">
             QOTE Warp Geometry
           </h1>
+          <p className="text-center text-amber-200 mb-3 text-sm">
+            Historical exploratory visualization · Symbolic concepts and thresholds are unvalidated.
+          </p>
           <p className="text-center text-teal-200 mb-8 text-lg md:text-xl text-balance">
             Breath → Dust → Dance → Breath
           </p>
