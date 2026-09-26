@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "QOTE Warp Geometry",
-  description: "Breath → Dust → Dance → Breath - Scientific visualization with mytho-symbolic overlays",
+  title: "QOTE Warp Geometry | Historical Visualization",
+  description: "An exploratory symbolic visualization from the QOTE research archive; not a validated scientific or clinical model.",
   generator: "v0.app",
   icons: {
     icon: [
